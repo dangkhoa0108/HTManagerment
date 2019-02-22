@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28606.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTManagerment", "HTManagerment\HTManagerment.csproj", "{C575FD29-555A-4499-9FD1-294E0EA9B49A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTManagerment.Data", "HTManagerment.Data\HTManagerment.Data.csproj", "{88758AF6-BD20-499B-94CE-5D3A57224E8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C575FD29-555A-4499-9FD1-294E0EA9B49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C575FD29-555A-4499-9FD1-294E0EA9B49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C575FD29-555A-4499-9FD1-294E0EA9B49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C575FD29-555A-4499-9FD1-294E0EA9B49A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88758AF6-BD20-499B-94CE-5D3A57224E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88758AF6-BD20-499B-94CE-5D3A57224E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88758AF6-BD20-499B-94CE-5D3A57224E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88758AF6-BD20-499B-94CE-5D3A57224E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DA85E47-AA25-4E64-8065-6E301352B511}
+	EndGlobalSection
+EndGlobal
