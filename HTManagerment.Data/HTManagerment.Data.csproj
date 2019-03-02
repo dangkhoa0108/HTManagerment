@@ -49,9 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Interfaces\IDateTracking.cs" />
-    <Compile Include="Migrations\201903021414147_InitDb.cs" />
-    <Compile Include="Migrations\201903021414147_InitDb.Designer.cs">
-      <DependentUpon>201903021414147_InitDb.cs</DependentUpon>
+    <Compile Include="Migrations\201903021559220_InitDb.cs" />
+    <Compile Include="Migrations\201903021559220_InitDb.Designer.cs">
+      <DependentUpon>201903021559220_InitDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\ProductModel.cs" />
@@ -70,8 +70,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201903021414147_InitDb.resx">
-      <DependentUpon>201903021414147_InitDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201903021559220_InitDb.resx">
+      <DependentUpon>201903021559220_InitDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

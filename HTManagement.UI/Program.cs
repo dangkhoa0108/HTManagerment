@@ -14,12 +14,11 @@ namespace HTManagement.UI
         /// </summary>
         [STAThread]
         static void Main()
-        {
-            Application.EnableVisualStyles();
+        {Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new HTManagementForm());
+            Application.Run(new MainForm());
         }
     }
 }
