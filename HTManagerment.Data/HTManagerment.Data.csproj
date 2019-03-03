@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\CommonConstant.cs" />
     <Compile Include="Common\Interfaces\IDateTracking.cs" />
     <Compile Include="Migrations\201903021559220_InitDb.cs" />
     <Compile Include="Migrations\201903021559220_InitDb.Designer.cs">

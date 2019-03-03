@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraTab;
 using HTManagement.UI.Service;
+using HTManagerment.Data.Common;
 
 namespace HTManagement.UI
 {
@@ -53,7 +47,30 @@ namespace HTManagement.UI
         private void btnProducts_ItemClick(object sender, ItemClickEventArgs e)
         {
             ProductManagerControl productManagerControl = new ProductManagerControl();
-            AddTabControl(productManagerControl, "Sản phẩm", "Product_16x16.png");
+            AddTabControl(productManagerControl, CommonConstant.Product, "Product_16x16.png");
         }
-    }
+
+        private void btnUnit_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var unitManagerControl = new UnitManagerControl();
+            AddTabControl(unitManagerControl, CommonConstant.Unit, "RulerHorizontal_16x16.png");
+        }
+
+        private void btnEditInfo_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var basicInfo = new BasicInfoManagerControl();
+            AddTabControl(basicInfo, CommonConstant.BasicInfo, "Information_16x16.png");
+        }
+
+        private void btnInfo_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var info = new InfomationControl();
+            AddTabControl(info, CommonConstant.SoftwareInfo, "Info_16x16.png");
+        }
+
+        private void btnHome_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var home = new HomeControl();
+            AddTabControl(home, CommonConstant.Home, "Home_16x16.png");
+        }}
 }
