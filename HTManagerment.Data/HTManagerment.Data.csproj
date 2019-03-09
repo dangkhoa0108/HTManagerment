@@ -48,11 +48,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\UnitService.cs" />
     <Compile Include="Common\CommonConstant.cs" />
     <Compile Include="Common\Interfaces\IDateTracking.cs" />
     <Compile Include="Migrations\201903021559220_InitDb.cs" />
     <Compile Include="Migrations\201903021559220_InitDb.Designer.cs">
       <DependentUpon>201903021559220_InitDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903091124481_Update_Date.cs" />
+    <Compile Include="Migrations\201903091124481_Update_Date.Designer.cs">
+      <DependentUpon>201903091124481_Update_Date.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\ProductModel.cs" />
@@ -63,7 +68,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BusinessLogic\" />
     <Folder Include="DataAccess\" />
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +77,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903021559220_InitDb.resx">
       <DependentUpon>201903021559220_InitDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903091124481_Update_Date.resx">
+      <DependentUpon>201903091124481_Update_Date.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

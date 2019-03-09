@@ -31,8 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.ribbonMenu = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageMenu = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
-            this.PrintTab = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.ExportTab = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.exportContent = new DevExpress.XtraBars.Ribbon.RecentItemControl();
+            this.recentStackPanel4 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
+            this.recentStackPanel3 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
+            this.recentTabItem1 = new DevExpress.XtraBars.Ribbon.RecentTabItem();
+            this.recentStackPanel5 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
+            this.recentButtonItem1 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
+            this.recentButtonItem2 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
+            this.PrintTab = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.printContent = new DevExpress.XtraBars.Ribbon.RecentItemControl();
+            this.recentStackPanel2 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
+            this.recentStackPanel1 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
             this.Print = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.backstageViewItemSeparator1 = new DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator();
             this.backstageViewTabItem3 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
@@ -58,31 +68,20 @@
             this.backstageViewControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewTabItem2 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.printContent = new DevExpress.XtraBars.Ribbon.RecentItemControl();
-            this.recentStackPanel1 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
-            this.recentStackPanel2 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
             this.btnPdf = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
-            this.exportContent = new DevExpress.XtraBars.Ribbon.RecentItemControl();
-            this.recentStackPanel3 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
-            this.recentStackPanel4 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
-            this.recentStackPanel5 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
-            this.recentTabItem1 = new DevExpress.XtraBars.Ribbon.RecentTabItem();
-            this.recentButtonItem1 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
-            this.recentButtonItem2 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageMenu)).BeginInit();
             this.backstageMenu.SuspendLayout();
-            this.PrintTab.SuspendLayout();
             this.ExportTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exportContent)).BeginInit();
+            this.PrintTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.printContent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabMain)).BeginInit();
             this.tabMain.SuspendLayout();
-            this.homeControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl2)).BeginInit();
             this.backstageViewControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.printContent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exportContent)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonMenu
@@ -103,34 +102,26 @@
             this.ribbonMenu.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonSetting,
             this.ribbonHelp});
-            this.ribbonMenu.Size = new System.Drawing.Size(1132, 143);
+            this.ribbonMenu.Size = new System.Drawing.Size(1439, 143);
             this.ribbonMenu.StatusBar = this.ribbonStatusBar;
             // 
             // backstageMenu
             // 
-            this.backstageMenu.Controls.Add(this.PrintTab);
             this.backstageMenu.Controls.Add(this.ExportTab);
+            this.backstageMenu.Controls.Add(this.PrintTab);
             this.backstageMenu.Items.Add(this.Print);
             this.backstageMenu.Items.Add(this.backstageViewItemSeparator1);
             this.backstageMenu.Items.Add(this.backstageViewTabItem3);
             this.backstageMenu.Items.Add(this.backstageViewItemSeparator2);
-            this.backstageMenu.Location = new System.Drawing.Point(-1, 27);
+            this.backstageMenu.Location = new System.Drawing.Point(59, 823);
             this.backstageMenu.Name = "backstageMenu";
             this.backstageMenu.OwnerControl = this.ribbonMenu;
-            this.backstageMenu.SelectedTab = this.Print;
-            this.backstageMenu.SelectedTabIndex = 0;
+            this.backstageMenu.SelectedTab = this.backstageViewTabItem3;
+            this.backstageMenu.SelectedTabIndex = 2;
             this.backstageMenu.Size = new System.Drawing.Size(1123, 454);
             this.backstageMenu.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
             this.backstageMenu.TabIndex = 0;
             this.backstageMenu.Text = "File Control";
-            // 
-            // PrintTab
-            // 
-            this.PrintTab.Controls.Add(this.printContent);
-            this.PrintTab.Location = new System.Drawing.Point(132, 63);
-            this.PrintTab.Name = "PrintTab";
-            this.PrintTab.Size = new System.Drawing.Size(990, 390);
-            this.PrintTab.TabIndex = 1;
             // 
             // ExportTab
             // 
@@ -140,6 +131,88 @@
             this.ExportTab.Size = new System.Drawing.Size(990, 390);
             this.ExportTab.TabIndex = 2;
             // 
+            // exportContent
+            // 
+            this.exportContent.DefaultContentPanel = this.recentStackPanel4;
+            this.exportContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.exportContent.Location = new System.Drawing.Point(0, 0);
+            this.exportContent.MainPanel = this.recentStackPanel3;
+            this.exportContent.Name = "exportContent";
+            this.exportContent.SelectedTab = this.recentTabItem1;
+            this.exportContent.Size = new System.Drawing.Size(990, 390);
+            this.exportContent.TabIndex = 0;
+            this.exportContent.Title = "Export";
+            // 
+            // recentStackPanel4
+            // 
+            this.recentStackPanel4.Name = "recentStackPanel4";
+            // 
+            // recentStackPanel3
+            // 
+            this.recentStackPanel3.Items.AddRange(new DevExpress.XtraBars.Ribbon.RecentItemBase[] {
+            this.recentTabItem1});
+            this.recentStackPanel3.Name = "recentStackPanel3";
+            this.recentStackPanel3.SelectedItem = this.recentTabItem1;
+            // 
+            // recentTabItem1
+            // 
+            this.recentTabItem1.Caption = "Export type";
+            this.recentTabItem1.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("recentTabItem1.ImageOptions.ItemNormal.SvgImage")));
+            this.recentTabItem1.Name = "recentTabItem1";
+            this.recentTabItem1.TabPanel = this.recentStackPanel5;
+            // 
+            // recentStackPanel5
+            // 
+            this.recentStackPanel5.Caption = "Export type";
+            this.recentStackPanel5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("recentStackPanel5.ImageOptions.SvgImage")));
+            this.recentStackPanel5.Items.AddRange(new DevExpress.XtraBars.Ribbon.RecentItemBase[] {
+            this.recentButtonItem1,
+            this.recentButtonItem2});
+            this.recentStackPanel5.Name = "recentStackPanel5";
+            this.recentStackPanel5.ShowCaption = false;
+            // 
+            // recentButtonItem1
+            // 
+            this.recentButtonItem1.Caption = "PDF";
+            this.recentButtonItem1.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("recentButtonItem1.ImageOptions.ItemNormal.SvgImage")));
+            this.recentButtonItem1.Name = "recentButtonItem1";
+            this.recentButtonItem1.Size = new System.Drawing.Size(106, 70);
+            // 
+            // recentButtonItem2
+            // 
+            this.recentButtonItem2.Caption = "XLS";
+            this.recentButtonItem2.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("recentButtonItem2.ImageOptions.ItemNormal.SvgImage")));
+            this.recentButtonItem2.Name = "recentButtonItem2";
+            this.recentButtonItem2.Size = new System.Drawing.Size(104, 70);
+            // 
+            // PrintTab
+            // 
+            this.PrintTab.Controls.Add(this.printContent);
+            this.PrintTab.Location = new System.Drawing.Point(132, 62);
+            this.PrintTab.Name = "PrintTab";
+            this.PrintTab.Size = new System.Drawing.Size(991, 392);
+            this.PrintTab.TabIndex = 1;
+            // 
+            // printContent
+            // 
+            this.printContent.DefaultContentPanel = this.recentStackPanel2;
+            this.printContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.printContent.Location = new System.Drawing.Point(0, 0);
+            this.printContent.MainPanel = this.recentStackPanel1;
+            this.printContent.Name = "printContent";
+            this.printContent.SelectedTab = null;
+            this.printContent.Size = new System.Drawing.Size(991, 392);
+            this.printContent.TabIndex = 0;
+            this.printContent.Title = "In";
+            // 
+            // recentStackPanel2
+            // 
+            this.recentStackPanel2.Name = "recentStackPanel2";
+            // 
+            // recentStackPanel1
+            // 
+            this.recentStackPanel1.Name = "recentStackPanel1";
+            // 
             // Print
             // 
             this.Print.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
@@ -147,7 +220,6 @@
             this.Print.ContentControl = this.PrintTab;
             this.Print.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Print.ImageOptions.ItemNormal.SvgImage")));
             this.Print.Name = "Print";
-            this.Print.Selected = true;
             // 
             // backstageViewItemSeparator1
             // 
@@ -160,6 +232,7 @@
             this.backstageViewTabItem3.ContentControl = this.ExportTab;
             this.backstageViewTabItem3.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("backstageViewTabItem3.ImageOptions.ItemNormal.SvgImage")));
             this.backstageViewTabItem3.Name = "backstageViewTabItem3";
+            this.backstageViewTabItem3.Selected = true;
             // 
             // backstageViewItemSeparator2
             // 
@@ -262,10 +335,10 @@
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem1);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 655);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 823);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonMenu;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1132, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1439, 31);
             // 
             // backstageViewControl1
             // 
@@ -296,7 +369,7 @@
             this.tabMain.Location = new System.Drawing.Point(0, 143);
             this.tabMain.Name = "tabMain";
             this.tabMain.SelectedTabPage = this.homeControl;
-            this.tabMain.Size = new System.Drawing.Size(1132, 512);
+            this.tabMain.Size = new System.Drawing.Size(1439, 680);
             this.tabMain.TabIndex = 2;
             this.tabMain.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.homeControl});
@@ -305,10 +378,9 @@
             // 
             // homeControl
             // 
-            this.homeControl.Controls.Add(this.backstageMenu);
             this.homeControl.Name = "homeControl";
             this.homeControl.ShowCloseButton = DevExpress.Utils.DefaultBoolean.False;
-            this.homeControl.Size = new System.Drawing.Size(1126, 484);
+            this.homeControl.Size = new System.Drawing.Size(1433, 652);
             this.homeControl.Text = "Trang chủ";
             // 
             // backstageViewControl2
@@ -333,26 +405,6 @@
             this.backstageViewTabItem2.ContentControl = this.backstageViewClientControl2;
             this.backstageViewTabItem2.Name = "backstageViewTabItem2";
             // 
-            // printContent
-            // 
-            this.printContent.DefaultContentPanel = this.recentStackPanel2;
-            this.printContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.printContent.Location = new System.Drawing.Point(0, 0);
-            this.printContent.MainPanel = this.recentStackPanel1;
-            this.printContent.Name = "printContent";
-            this.printContent.SelectedTab = null;
-            this.printContent.Size = new System.Drawing.Size(990, 390);
-            this.printContent.TabIndex = 0;
-            this.printContent.Title = "In";
-            // 
-            // recentStackPanel1
-            // 
-            this.recentStackPanel1.Name = "recentStackPanel1";
-            // 
-            // recentStackPanel2
-            // 
-            this.recentStackPanel2.Name = "recentStackPanel2";
-            // 
             // btnPdf
             // 
             this.btnPdf.Caption = "PDF";
@@ -360,65 +412,12 @@
             this.btnPdf.Name = "btnPdf";
             this.btnPdf.Size = new System.Drawing.Size(106, 70);
             // 
-            // exportContent
-            // 
-            this.exportContent.DefaultContentPanel = this.recentStackPanel4;
-            this.exportContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.exportContent.Location = new System.Drawing.Point(0, 0);
-            this.exportContent.MainPanel = this.recentStackPanel3;
-            this.exportContent.Name = "exportContent";
-            this.exportContent.SelectedTab = this.recentTabItem1;
-            this.exportContent.Size = new System.Drawing.Size(990, 390);
-            this.exportContent.TabIndex = 0;
-            this.exportContent.Title = "Export";
-            // 
-            // recentStackPanel3
-            // 
-            this.recentStackPanel3.Items.AddRange(new DevExpress.XtraBars.Ribbon.RecentItemBase[] {
-            this.recentTabItem1});
-            this.recentStackPanel3.Name = "recentStackPanel3";
-            this.recentStackPanel3.SelectedItem = this.recentTabItem1;
-            // 
-            // recentStackPanel4
-            // 
-            this.recentStackPanel4.Name = "recentStackPanel4";
-            // 
-            // recentStackPanel5
-            // 
-            this.recentStackPanel5.Caption = "Export type";
-            this.recentStackPanel5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("recentStackPanel5.ImageOptions.SvgImage")));
-            this.recentStackPanel5.Items.AddRange(new DevExpress.XtraBars.Ribbon.RecentItemBase[] {
-            this.recentButtonItem1,
-            this.recentButtonItem2});
-            this.recentStackPanel5.Name = "recentStackPanel5";
-            this.recentStackPanel5.ShowCaption = false;
-            // 
-            // recentTabItem1
-            // 
-            this.recentTabItem1.Caption = "Export type";
-            this.recentTabItem1.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("recentTabItem1.ImageOptions.ItemNormal.SvgImage")));
-            this.recentTabItem1.Name = "recentTabItem1";
-            this.recentTabItem1.TabPanel = this.recentStackPanel5;
-            // 
-            // recentButtonItem1
-            // 
-            this.recentButtonItem1.Caption = "PDF";
-            this.recentButtonItem1.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("recentButtonItem1.ImageOptions.ItemNormal.SvgImage")));
-            this.recentButtonItem1.Name = "recentButtonItem1";
-            this.recentButtonItem1.Size = new System.Drawing.Size(106, 70);
-            // 
-            // recentButtonItem2
-            // 
-            this.recentButtonItem2.Caption = "XLS";
-            this.recentButtonItem2.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("recentButtonItem2.ImageOptions.ItemNormal.SvgImage")));
-            this.recentButtonItem2.Name = "recentButtonItem2";
-            this.recentButtonItem2.Size = new System.Drawing.Size(104, 70);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 686);
+            this.ClientSize = new System.Drawing.Size(1439, 854);
+            this.Controls.Add(this.backstageMenu);
             this.Controls.Add(this.tabMain);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.backstageViewControl1);
@@ -432,17 +431,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageMenu)).EndInit();
             this.backstageMenu.ResumeLayout(false);
-            this.PrintTab.ResumeLayout(false);
             this.ExportTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.exportContent)).EndInit();
+            this.PrintTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.printContent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
             this.backstageViewControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabMain)).EndInit();
             this.tabMain.ResumeLayout(false);
-            this.homeControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl2)).EndInit();
             this.backstageViewControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.printContent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exportContent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

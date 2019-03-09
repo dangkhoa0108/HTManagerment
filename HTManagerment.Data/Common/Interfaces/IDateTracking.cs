@@ -6,7 +6,7 @@ namespace HTManagerment.Data.Common.Interfaces
     {
         DateTime DateCreated { set; get; }
 
-        DateTime DateModified { set; get; }
+        DateTime? DateModified { set; get; }
 
         int Version { get; set; }
     }

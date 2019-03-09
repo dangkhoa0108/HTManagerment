@@ -16,7 +16,7 @@ namespace HTManagerment.Data.Model
 
         public DateTime DateCreated { get; set; }
 
-        public DateTime DateModified { get; set; }
+        public DateTime? DateModified { get; set; }
 
         public int Version { get; set; }
     }

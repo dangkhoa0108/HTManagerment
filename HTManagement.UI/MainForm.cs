@@ -42,6 +42,7 @@ namespace HTManagement.UI
                 var addTab = new AddTabService();
                 addTab.AddTabControl(tabMain, itemTabName, icon, userControl);
             }
+            userControl.Dock = DockStyle.Fill;
         }
 
         private void btnProducts_ItemClick(object sender, ItemClickEventArgs e)
@@ -71,6 +72,5 @@ namespace HTManagement.UI
         private void btnHome_ItemClick(object sender, ItemClickEventArgs e)
         {
             var home = new HomeControl();
-            AddTabControl(home, CommonConstant.Home, "Home_16x16.png");
-        }}
+            AddTabControl(home, CommonConstant.Home, "Home_16x16.png");}}
 }
