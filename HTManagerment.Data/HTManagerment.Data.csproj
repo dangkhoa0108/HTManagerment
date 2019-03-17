@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\ProductService.cs" />
     <Compile Include="BusinessLogic\UnitService.cs" />
     <Compile Include="Common\CommonConstant.cs" />
     <Compile Include="Common\Interfaces\IDateTracking.cs" />

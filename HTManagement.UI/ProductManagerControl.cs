@@ -12,19 +12,18 @@ namespace HTManagement.UI
         {
             InitializeComponent();
 
-            gridControl.DataSource = GetDataSource();
-            BindingList<UnitModel> dataSource = GetDataSource();
-            gridControl.DataSource = dataSource;
-            bsiRecordsCount.Caption = "RECORDS : " + dataSource.Count;
+            gvProduct.DataSource = GetDataSource();
+            BindingList<ProductModel> dataSource = GetDataSource();
+            gvProduct.DataSource = dataSource;
         }
         void bbiPrintPreview_ItemClick(object sender, ItemClickEventArgs e)
         {
-            gridControl.ShowRibbonPrintPreview();
+            gvProduct.ShowRibbonPrintPreview();
         }
-        public BindingList<UnitModel> GetDataSource(){
-            var data = UnitService.GetUnit();
-            BindingList<UnitModel> result = new BindingList<UnitModel>(data);
-            
+        public BindingList<ProductModel> GetDataSource()
+        {
+            var data = ProductService.GetProduct();
+            BindingList<ProductModel> result = new BindingList<ProductModel>(data);
             return result;
         }
     }

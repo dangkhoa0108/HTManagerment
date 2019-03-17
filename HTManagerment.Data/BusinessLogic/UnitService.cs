@@ -5,7 +5,7 @@ using HTManagerment.Data.Model;
 
 namespace HTManagerment.Data.BusinessLogic
 {
-    public class UnitService
+    public static class UnitService
     {
         private static readonly QuanLyCanContext Context = new QuanLyCanContext();
 
@@ -20,7 +20,7 @@ namespace HTManagerment.Data.BusinessLogic
         }
         public static bool DeleteUnit(int unitId)
         {
-            var item = Context.Units.FirstOrDefault(x => x.UnitId == unitId);
+            var item = Context.Units.Find(unitId);
             if (item == null) return false;
             Context.Units.Remove(item);
             Context.SaveChanges();
@@ -43,7 +43,7 @@ namespace HTManagerment.Data.BusinessLogic
                     Context.SaveChanges();
                     return true;
                 }
-                var currentUnit = Context.Units.FirstOrDefault(x => x.UnitId == model.UnitId);
+                var currentUnit = Context.Units.Find(model.UnitId);
                 if (currentUnit == null) return false;
                 currentUnit.Value = model.Value;
                 currentUnit.DateModified = DateTime.Now;

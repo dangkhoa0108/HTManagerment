@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.unitRibon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -47,7 +46,6 @@
             this.colValue = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDateCreated = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colVersion = new DevExpress.XtraGrid.Columns.GridColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitRibon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.girdUnit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitModelBindingSource)).BeginInit();
@@ -216,7 +214,6 @@
             this.Controls.Add(this.unitRibon);
             this.Name = "UnitManagerControl";
             this.Size = new System.Drawing.Size(791, 582);
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitRibon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.girdUnit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitModelBindingSource)).EndInit();
@@ -227,7 +224,6 @@
         }
 
         #endregion
-        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraBars.Ribbon.RibbonControl unitRibon;
         private DevExpress.XtraBars.BarButtonItem bbiPrintPreview;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
