@@ -33,6 +33,11 @@ namespace HTManagement.UI
                 bbiEdit.Enabled = false;
                 bbiDelete.Enabled = false;
             }
+            else
+            {
+                bbiEdit.Enabled = true;
+                bbiDelete.Enabled = true;
+            }
             BindingList<UnitModel> dataSource = GetDataSource();
             girdUnit.DataSource = dataSource;
             bsiRecordsCount.Caption = "RECORDS : " + dataSource.Count;
